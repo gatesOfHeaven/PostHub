@@ -1,5 +1,7 @@
 # PostHub - React, FastAPI, PostgreSQL, Redis, JWT, Docker
 
+Just Twitter clone
+
 ## Setup with Docker
 
 ```sh

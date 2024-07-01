@@ -1,0 +1,78 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+}
+
+.default {
+    color: white;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #8888dd;
+}
+.default:active {
+    box-shadow: none;
+}
+
+.text {
+    color: #777;
+    background-color: transparent;
+}
+.text:hover {
+    background-color: #efefef;
+}
+.text:active {
+    background-color: #dfdfdf;
+}
+
+.icon {
+    padding: 0;
+    border-radius: 25%;
+    background-color: transparent;
+}
+.icon:hover {
+    background-color: #efefef;
+}
+.icon:active {
+    background-color: #dfdfdf;
+}
+
+.danger {
+    border: 2px solid #dc2626;
+    color: #dc2626;
+    background-color: transparent;
+}
+.danger:hover {
+    color: white;
+    background-color: #dc2626;
+}
+
+.paginationFalse, .paginationTrue {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 30%;
+    font-size: 12.5px;
+}
+.paginationFalse {
+    background-color: rgba(55, 55, 55, 0.075);
+}
+.paginationFalse:hover {
+    background-color: rgba(55, 55, 55, 0.125);
+}
+.paginationFalse:active {
+    background-color: rgba(55, 55, 55, 0.2);
+}
+.paginationTrue {
+    color: white;
+    background-color: #8888dd;
+}

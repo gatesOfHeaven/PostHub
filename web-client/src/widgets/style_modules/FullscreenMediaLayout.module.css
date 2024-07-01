@@ -1,0 +1,17 @@
+.root {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: zoom-out;
+    z-index: 3;
+}
+
+.root img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}

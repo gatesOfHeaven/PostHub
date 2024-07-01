@@ -1,0 +1,6 @@
+**/__pycache__/
+**/*.pyc
+server/.env
+
+web-client/node_modules/
+web-client/build/

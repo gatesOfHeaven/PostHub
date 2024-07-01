@@ -1,0 +1,61 @@
+.root {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.root a {
+    height: min-content;
+    text-decoration: none;
+}
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10px;
+    font-size: 17px;
+    word-wrap: break-word;
+    color: #444;
+}
+.interface a {
+    display: inline;
+    word-wrap: break-word;
+}
+
+.infoLine {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info {
+    margin: 0 10px;
+    color: #777;
+}
+.fullname {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+.interaction {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    .root {
+        gap: 5px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .interface {
+        font-size: 15px;
+    }
+    .fullname {
+        font-size: 17.5px;
+    }
+}

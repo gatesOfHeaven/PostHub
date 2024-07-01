@@ -1,0 +1,92 @@
+.root {
+    display: flex;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-width: 100vw;
+    height: 100%;
+}
+
+.root article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 45%;
+}
+.right {
+    width: 55%;
+    background-color: #efefff;
+}
+
+.root h1 {
+    margin: 5px;
+}
+
+.signContainer {
+    width: 275px;
+    margin: 50px 0;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 5px #ddd;
+}
+.signContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.error {
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 90%;
+    min-height: 14.4px;
+    color: #dd5555;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+@media (max-width: 700px) {
+    .root {
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: #efefff;
+    }
+
+    .root article {
+        width: 100%;
+    }
+    
+    .left h1 {
+        display: none;
+    }
+
+    .right {
+        background-color: transparent;
+    }
+
+    .signContainer {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .signContainer {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

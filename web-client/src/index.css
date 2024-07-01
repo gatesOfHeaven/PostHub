@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Lato, sans-serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#non-header {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    background-color: #f0f0ff;
+    overflow: hidden;
+    transition: 0.3s ease-out;    
+}
+#non-sidebar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+#page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 800px;
+    height: max-content;
+    min-height: 100%;
+    margin: 20px auto;
+    padding: 20px 50px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: white;
+    z-index: 0;
+    transition: 0.3s ease-out;
+}
+
+
+@media (max-width: 1150px) {
+    #page {
+        width: 100%;
+        margin: 0;
+        padding: 15px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    #page {
+        padding: 15px 10px;
+    }
+    .page-blured {
+        filter: brightness(70%);
+    }
+}
+
+@media (max-width: 500px) {
+    #page {
+        gap: 5px;
+        padding: 7.5px;
+    }
+}

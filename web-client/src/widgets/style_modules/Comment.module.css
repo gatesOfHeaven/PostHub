@@ -1,0 +1,50 @@
+.root {
+    display: flex;
+    gap: 5px;
+    padding: 5px 0;
+}
+.root a {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    word-wrap: break-word;
+    color: #666;
+}
+
+.info {
+    display: flex;
+    gap: 0 15px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #777;
+    word-wrap: break-word;
+}
+.fullname {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+.foot {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 500px) {
+    .root {
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .fullname {
+        font-size: 15px;
+    }
+    .content {
+        font-size: 14px;
+    }
+}

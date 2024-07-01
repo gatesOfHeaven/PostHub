@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Users",
+        "columns": "id INT PRIMARY KEY, username VARCHAR(15), fullname VARCHAR(55), password VARCHAR(15)"
+    },
+    {
+        "name": "Posts",
+        "columns": "id INT PRIMARY KEY, author_id INT, posted_time TIMESTAMP, text_content TEXT"
+    },
+    {
+        "name": "Post_Likes",
+        "columns": "post_id INT, user_id INT"
+    },
+    {
+        "name": "Post_Images",
+        "columns": "id INT PRIMARY KEY, post_id INT, url VARCHAR(100)"
+    },
+    {
+        "name": "Post_Comments",
+        "columns": "id INT PRIMARY KEY, post_id INT, author_id INT, posted_time TIMESTAMP, text_content TEXT"
+    },
+    {
+        "name": "Comment_Likes",
+        "columns": "comment_id INT, user_id INT"
+    }
+]

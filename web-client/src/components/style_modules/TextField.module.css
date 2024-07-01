@@ -1,0 +1,44 @@
+.root {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2.5px;
+    width: 100%;
+    margin-top: 7.5px;
+    padding: 2.5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.root span {
+    position: absolute;
+    font-size: 14px;
+    top: -10px;
+    left: 5%;
+    padding: 0 5px;
+    color: #777;
+    background-color: white;
+    user-select: none;
+}
+
+.root input {
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 1;
+    min-width: min-content;
+    padding: 2.5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.root:has(input:focus) {
+    border-color: black;
+}
+.root input:focus {
+    outline: none;
+}
+.root:has(input:focus) span {
+    color: black;
+}
